@@ -1,4 +1,5 @@
 from homework import *
+from pathlib import Path
 import urllib.request
 import sqlite3
 import pandas as pd
@@ -20,6 +21,8 @@ def test_sql():
 
     assert customer_df.shape[0] == 1
     assert customer_df['name'][0] == 'Topiclounge'
+
+    Path('data.db').unlink(missing_ok=True)
 
 
 def test_model():
