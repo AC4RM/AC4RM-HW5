@@ -13,7 +13,7 @@
 3. Using the iris datasets from the sklearn package, try to group the observations into clusters using all the features.
    - The four columns in the iris dataset are `sepal length`, `sepal width`, `petal length`, `petal width`.
    - Draw the elbow plot to figure out the optimal value of K (K within the range of 1 to 10). 
-   - Return the model re-fitted with the optimal K.
+   - Return the K-means model re-fitted with the optimal K.
 4. - Write a regex pattern with named groups that can extract the month, date and year from the string.
    - The groups should be named `month`, `date`, `year` correspondingly. For example:
      - `result = re.search(regex_pattern, '05/31/2023')`
